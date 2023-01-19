@@ -18,7 +18,7 @@ body{
 }
 
 header{
-    background-color: black;
+    background-color: #75009c;
 }
 
 header > h1{
@@ -58,11 +58,11 @@ header > p > a:hover {
 
 }
 
-article{
+section{
     background-color: white;
 }
 
-article > p {
+section > p {
     color: black;
 
     display: block;
