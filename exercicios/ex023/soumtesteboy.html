@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+        * {
+            margin: 0px;
+        }
+
+        html, body{
+            background-size: 100vh;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        th{
+            border: 1px solid black;
+            padding: 7px;
+            background-color: rgb(220, 220, 220);
+        }
+        th > P {
+            font-size: 9px;
+            font-weight: lighter;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 7px;
+            text-align: center;
+        }
+
+
+    </style>
+    <title>tabelas</title>
+</head>
+<body>
+    <h1>Testando construção de Tabelas</h1>
+    <!--
+        HIERARQUIA DE TABELAS (SIMPLES)
+        TABLE = tabela
+        TABLE ROW = linha de tabela
+            TABLE HEADER = Cabeçalho de tabela (titulo*)
+            TABLE DATA = dado de tabela (conteúdo*)
+    -->
+    <table>
+        <th id="coluna1">
+            colocação
+        </th>
+        <th id="coluna2">País</th>
+        <th id="coluna3">Médias das notas no Pisa de Leitura,Matemática e Ciências</th>
+
+        <tr>
+            <td>1.ª</td>
+            <td>China (Ásia)</td>
+            <td>578,7 pontos (555; 591; 590)</td>
+        </tr>
+
+        <tr>
+            <td>2.ª</td>
+            <td>Cingapura (Ásia)</td>
+            <td>556,3 pontos (549; 569; 551)</td>
+        </tr>
+
+        <tr>
+            <td>3.ª</td>
+            <td>Estônia (Europa)</td>
+            <td>525,3 pontos (523; 523; 530)</td>
+        </tr>
+    </table>
+
+    <table>
+        <th>posição</th>
+        <th>Unidade federativa</th>
+        <th>população <p>censo de 2010</p></th>
+
+        <th> população <p>prévia 2022</p></th>
+        <th></th>
+        <th></th>
+        <th></th>
+    </table>
+</body>
+</html>
