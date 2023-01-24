@@ -4,12 +4,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&display=swap');
 
-*{
+* {
     margin: 0px;
     padding: 0px;
 }
 
-:root {
+:root{
     --fonte1: Verdana, Geneva, Tahoma, sans-serif;
     --fonte2:'Passion One', cursive;
     --fonte3: 'Sriracha', cursive;
@@ -17,91 +17,85 @@
 }
 
 html, body {
-    background-color: aqua;
-    min-height: 100vh;
+    size: 100vh;
+    background-color: #4d4fc2;
     font-family: var(--fonte1);
 }
 
 header {
-    background-color: black;
-    color: white;
+    background-color: #e7f1f9;
+    color: #242323;
     text-align: center;
-
 }
 
 header > h1 {
-    padding-top: 50px;
-    font-size: 13vh;
-    font-family: var(--fonte2);
-    font-variant: small-caps;
-    text-shadow: 3px 1px 2px rgb(86, 7, 96);
+    padding-top: 40px;
+    text-shadow: 1.3px 2px 3px #3b323253;
 }
 
 header > p {
-    padding-bottom: 50px;
+    padding-bottom: 40px;
+    text-shadow: 1px 1px 3px #3b323253;
 }
 
 header a, footer a {
     text-decoration: none;
-    color: white;
+    color: #242323;
     font-weight: bold;
 }
 
 header a:hover, footer a:hover {
-    color: rgb(81, 4, 125);
+    color: #7f81ff;
 }
 
-section {
-    padding-top: 10vh;
-    padding-left: 20px;
-    padding-bottom: 10vh;
-    line-height: 2em;
-    font-size: 3vw;
+section{
+    padding-top: 30px;
+    padding-left: 23px;
+    padding-bottom: 30px;
 }
 
 section > p {
+    padding-bottom: 30px;
     font-family: var(--fonte4);
-    padding-bottom: 20px;
-    font-weight: bolder;
+    font-size: 3vw;
 }
 
-section.normal{
-    background-color: white;
-    color: black;
-
+section.normal {
+    background-color: #4d4fc2;
+    color: #E7F1F9;
 }
 
 section.imagem {
-    background-color: black;
-    padding: 30px;
-    background-attachment: fixed;
+    background-color: #7f81ff;
+    color: #242323;
+    text-shadow: 1px 1px 3px #ffffff2e;
 }
 
 section.imagem > p {
+    color: black;
     display: inline-block;
-    background-color: rgba(8, 0, 23, 0.427);
-    border: 10px;
+    background-color: #24232377;
     padding: 20px;
-    border-radius: 20px;
-    text-shadow: 1px 1px 0px black;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.568);
-
+    border-radius: 15px;
+    color: #e7f1f9;
+    text-shadow: 1px 1px 3px #ffffff2e;
 }
 
 section#img1{
     background-image: url('../imagens/background001.jpg');
-    background-position: center center;
+    background-position: right center;
+    background-attachment: fixed;
 }
 
 section#img2{
     background-image: url('../imagens/background002.jpg');
-    background-position: center center;
+    background-position: left center;
+    background-attachment: fixed;
 }
 
 footer {
-    background-color: rgb(0, 0, 0);
-    padding: 10px;
-    border: 10px;
-    color: white;
+    background-color: #e7f1f9;
+    color: #242323;
     text-align: center;
+    padding: 7px;
 }
