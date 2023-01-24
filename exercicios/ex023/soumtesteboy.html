@@ -11,20 +11,33 @@
         }
 
         html, body{
-            background-size: 100vh;
+            background-size: 100vw; 
         }
+
+        h1{
+            text-align: center;
+        background-color: black;
+        color: rgb(231, 237, 242);
+        padding: 5vw;
+
+}
 
         table {
             border-collapse: collapse;
+            margin: 30px;
         }
+
 
         th{
             border: 1px solid black;
             padding: 7px;
-            background-color: rgb(220, 220, 220);
+            background-color: rgb(88, 88, 119);
+            color: aliceblue;
+ 
+
         }
         th > P {
-            font-size: 9px;
+            font-size: 11px;
             font-weight: lighter;
         }
 
@@ -32,6 +45,16 @@
             border: 1px solid black;
             padding: 7px;
             text-align: center;
+        }
+
+        a {
+            text-decoration: none;
+        }
+        a:hover{
+        }
+
+        abbr{
+            text-decoration: none;
         }
 
 
@@ -47,41 +70,85 @@
             TABLE HEADER = Cabeçalho de tabela (titulo*)
             TABLE DATA = dado de tabela (conteúdo*)
     -->
+    <p>
+        <table>
+            <h2>países com a maior educação do mundo <a href="https://pt.wikipedia.org/wiki/Lista_de_unidades_federativas_do_Brasil_por_popula%C3%A7%C3%A3o" target="_blank" title="source">&#x1F517</a></h2></h2>
+            <tr>
+                <th id="coluna1">
+                    colocação
+                </th>
+                <th id="coluna2">País</th>
+                <th id="coluna3">Médias das notas no Pisa de Leitura,Matemática e Ciências</th>
+            </tr>
+            <tr>
+                <td>1.ª</td>
+                <td>China <br>(Ásia)</td>
+                <td>578,7 pontos (555; 591; 590)</td>
+            </tr>
+            <tr>
+                <td>2.ª</td>
+                <td>Cingapura <br>(Ásia)</td>
+                <td>556,3 pontos (549; 569; 551)</td>
+            </tr>
+            <tr>
+                <td>3.ª</td>
+                <td>Estônia <br>(Europa)</td>
+                <td>525,3 pontos (523; 523; 530)</td>
+            </tr>
+        </table>
+    </p>
+
+
+
     <table>
-        <th id="coluna1">
-            colocação
-        </th>
-        <th id="coluna2">País</th>
-        <th id="coluna3">Médias das notas no Pisa de Leitura,Matemática e Ciências</th>
-
+        <h2>Lista de unidades federativas do Brasil por população <a href="https://pt.wikipedia.org/wiki/Lista_de_unidades_federativas_do_Brasil_por_popula%C3%A7%C3%A3o" target="_blank" title="source">&#x1F517</a> </h2>
         <tr>
-            <td>1.ª</td>
-            <td>China (Ásia)</td>
-            <td>578,7 pontos (555; 591; 590)</td>
+            <th>posição</th>
+            <th>Unidade federativa</th>
+            <th>população <p>censo de 2010</p></th>
+            <th> população <p>prévia 2022</p></th>
+            <th>Mudança</th>
+            <th> % da pop. total</th>
+            <th> país comparavel (habitantes)</th>
         </tr>
 
         <tr>
-            <td>2.ª</td>
-            <td>Cingapura (Ásia)</td>
-            <td>556,3 pontos (549; 569; 551)</td>
+            <td>1</td>
+            <td>São paulo</td>
+            <td>41 262 199</td>
+            <td>46 024 937</td>
+            <td>+11.5%</td>
+            <td>22,2%</td>
+            <td>Espanha<br>(46 754 778)
+            </td>
         </tr>
 
         <tr>
-            <td>3.ª</td>
-            <td>Estônia (Europa)</td>
-            <td>525,3 pontos (523; 523; 530)</td>
+            <td>2</td>
+            <td>Minas Gerais</td>
+            <td>19 597 330</td>
+            <td>20 732 660</td>
+            <td>+5.8%</td>
+            <td>10,0%</td>
+            <td>Burquina Fasso <br>(20 903 273)</td>
         </tr>
-    </table>
 
-    <table>
-        <th>posição</th>
-        <th>Unidade federativa</th>
-        <th>população <p>censo de 2010</p></th>
+        <tr>
+            <td>3</td>
+            <td>Rio de Janeiro</td>
+            <td>15 989 929</td>
+            <td>16 615 526</td>
+            <td>+3.9%</td>
+            <td>8,0%</td>
+            <td>Camboja <br>(16 718 965)</td>
+        </tr>
 
-        <th> população <p>prévia 2022</p></th>
-        <th></th>
-        <th></th>
-        <th></th>
+        
+
+        
+
+
+
     </table>
 </body>
 </html>
