@@ -25,6 +25,8 @@
         table {
             border-collapse: collapse;
             margin: 30px;
+            width: 600px;
+            height: 300px;
         }
 
 
@@ -33,6 +35,7 @@
             padding: 7px;
             background-color: rgb(88, 88, 119);
             color: aliceblue;
+
  
 
         }
@@ -43,9 +46,16 @@
 
         td {
             border: 1px solid black;
-            padding: 7px;
+            padding: 10px;
             text-align: center;
+            vertical-align: top;
         }
+
+        .numero {
+            text-align: right;
+        }
+
+
 
         a {
             text-decoration: none;
@@ -70,38 +80,40 @@
             TABLE HEADER = Cabeçalho de tabela (titulo*)
             TABLE DATA = dado de tabela (conteúdo*)
     -->
-    <p>
         <table>
             <h2>países com a maior educação do mundo <a href="https://pt.wikipedia.org/wiki/Lista_de_unidades_federativas_do_Brasil_por_popula%C3%A7%C3%A3o" target="_blank" title="source">&#x1F517</a></h2></h2>
-            <tr>
-                <th id="coluna1">
+
+            <tr class="titulo">
+                <th>
                     colocação
                 </th>
-                <th id="coluna2">País</th>
-                <th id="coluna3">Médias das notas no Pisa de Leitura,Matemática e Ciências</th>
+                <th>País</th>
+                <th>Médias das notas no Pisa de Leitura,Matemática e Ciências</th>
             </tr>
+
             <tr>
                 <td>1.ª</td>
                 <td>China <br>(Ásia)</td>
-                <td>578,7 pontos (555; 591; 590)</td>
+                <td class="numero">578,7 pontos (555; 591; 590)</td>
             </tr>
             <tr>
                 <td>2.ª</td>
                 <td>Cingapura <br>(Ásia)</td>
-                <td>556,3 pontos (549; 569; 551)</td>
+                <td class="numero">556,3 pontos (549; 569; 551)</td>
             </tr>
             <tr>
                 <td>3.ª</td>
                 <td>Estônia <br>(Europa)</td>
-                <td>525,3 pontos (523; 523; 530)</td>
+                <td class="numero">525,3 pontos (523; 523; 530)</td>
             </tr>
         </table>
-    </p>
+
 
 
 
     <table>
         <h2>Lista de unidades federativas do Brasil por população <a href="https://pt.wikipedia.org/wiki/Lista_de_unidades_federativas_do_Brasil_por_popula%C3%A7%C3%A3o" target="_blank" title="source">&#x1F517</a> </h2>
+
         <tr>
             <th>posição</th>
             <th>Unidade federativa</th>
