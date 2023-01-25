@@ -12,6 +12,7 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         caption {
@@ -21,6 +22,16 @@
             background-color: lightgrey;
 
         }
+        
+        thead {
+            position: sticky;
+            top: -1px;
+            
+        }
+
+
+
+
         thead, tfoot {
             background-color: gray;
             color: white;
@@ -30,7 +41,11 @@
             background-color: lightgrey;
         }
         tbody > tr:nth-child(even){
-            background-color: rgb(153, 14, 208);
+            background-color: gray;
+        }
+
+        tr:hover {
+            border: 2px solid rgb(235, 255, 17);
         }
 
 
@@ -70,12 +85,12 @@
         <tbody>
             <tr>
                 <td>São paulo</td>
-                <td class="num">41  262  199</td>
+                <td class="num">41.262.199</td>
             </tr>
             
             <tr>
                 <td>Minas gerais</td>
-                <td class="num">19 597.330</td>
+                <td class="num">19.597.330</td>
             </tr>
 
             <tr>
@@ -90,12 +105,12 @@
 
             <tr>
                 <td>paraná</td>
-                <td class="num">10 444 526</td>
+                <td class="num">10.444.526</td>
             </tr>
 
             <tr>
                 <td>Rio grande do sul</td>
-                <td class="num">10 693 929</td>
+                <td class="num">10.693.929</td>
             </tr>
 
             <tr>
