@@ -4,163 +4,188 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-
-        * {
-            margin: 0px;
-        }
-
-        html, body{
-            background-size: 100vw; 
-        }
-
-        h1{
-            text-align: center;
-        background-color: black;
-        color: rgb(231, 237, 242);
-        padding: 5vw;
-
-}
-
-        table {
-            border-collapse: collapse;
-            margin: 30px;
-            width: 600px;
-            height: 300px;
-        }
-
-
-        th{
-            border: 1px solid black;
-            padding: 7px;
-            background-color: rgb(88, 88, 119);
-            color: aliceblue;
-
- 
-
-        }
-        th > P {
-            font-size: 11px;
-            font-weight: lighter;
-        }
-
-        td {
-            border: 1px solid black;
-            padding: 10px;
-            text-align: center;
-            vertical-align: top;
-        }
-
-        .numero {
-            text-align: right;
-        }
-
-
-
-        a {
-            text-decoration: none;
-        }
-        a:hover{
-        }
-
-        abbr{
-            text-decoration: none;
-        }
-
-
-    </style>
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilo/style.css">
     <title>tabelas</title>
 </head>
 <body>
     <h1>Testando construção de Tabelas</h1>
     <!--
         HIERARQUIA DE TABELAS (SIMPLES)
+        CAPTION = Titulo
         TABLE = tabela
         TABLE ROW = linha de tabela
             TABLE HEADER = Cabeçalho de tabela (titulo*)
             TABLE DATA = dado de tabela (conteúdo*)
     -->
         <table>
-            <h2>países com a maior educação do mundo <a href="https://pt.wikipedia.org/wiki/Lista_de_unidades_federativas_do_Brasil_por_popula%C3%A7%C3%A3o" target="_blank" title="source">&#x1F517</a></h2></h2>
-
-            <tr class="titulo">
-                <th>
-                    colocação
-                </th>
-                <th>País</th>
-                <th>Médias das notas no Pisa de Leitura,Matemática e Ciências</th>
-            </tr>
-
-            <tr>
-                <td>1.ª</td>
-                <td>China <br>(Ásia)</td>
-                <td class="numero">578,7 pontos (555; 591; 590)</td>
-            </tr>
-            <tr>
-                <td>2.ª</td>
-                <td>Cingapura <br>(Ásia)</td>
-                <td class="numero">556,3 pontos (549; 569; 551)</td>
-            </tr>
-            <tr>
-                <td>3.ª</td>
-                <td>Estônia <br>(Europa)</td>
-                <td class="numero">525,3 pontos (523; 523; 530)</td>
-            </tr>
+            <caption>países com a maior educação do mundo <a href="https://pt.wikipedia.org/wiki/Lista_de_unidades_federativas_do_Brasil_por_popula%C3%A7%C3%A3o" target="_blank" title="source">&#x1F517</a> </caption>
+            <thead>
+                <tr>
+                    <th scope="col">colocação</th>
+                    <th scope="col">País</th>
+                    <th scope="col">Médias das notas no Pisa de Leitura,Matemática e Ciências</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1.ª</td>
+                    <td>China <br>(Ásia)</td>
+                    <td class="num">578,7 pontos (555; 591; 590)</td>
+                </tr>
+                <tr>
+                    <td>2.ª</td>
+                    <td>Cingapura <br>(Ásia)</td>
+                    <td class="num">556,3 pontos (549; 569; 551)</td>
+                </tr>
+                <tr>
+                    <td>3.ª</td>
+                    <td>Estônia <br>(Europa)</td>
+                    <td class="num">525,3 pontos (523; 523; 530)</td>
+                </tr>
+            </tbody>
         </table>
 
 
+    <table summary="o numero de populações do brasil em ordem ">
+        <caption>população das unidades federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">cidade</th>
+                <th scope="col" style="width: 30px;">população</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São paulo</td>
+                <td class="num">41.262.199</td>
+            </tr>
+            
+            <tr>
+                <td>Minas gerais</td>
+                <td class="num">19.597.330</td>
+            </tr>
 
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">15.989.929</td>
+            </tr>
 
-    <table>
-        <h2>Lista de unidades federativas do Brasil por população <a href="https://pt.wikipedia.org/wiki/Lista_de_unidades_federativas_do_Brasil_por_popula%C3%A7%C3%A3o" target="_blank" title="source">&#x1F517</a> </h2>
+            <tr>
+                <td>bahia</td>
+                <td class="num">14.016.906</td>
+            </tr>
 
-        <tr>
-            <th>posição</th>
-            <th>Unidade federativa</th>
-            <th>população <p>censo de 2010</p></th>
-            <th> população <p>prévia 2022</p></th>
-            <th>Mudança</th>
-            <th> % da pop. total</th>
-            <th> país comparavel (habitantes)</th>
-        </tr>
+            <tr>
+                <td>paraná</td>
+                <td class="num">10.444.526</td>
+            </tr>
 
-        <tr>
-            <td>1</td>
-            <td>São paulo</td>
-            <td>41 262 199</td>
-            <td>46 024 937</td>
-            <td>+11.5%</td>
-            <td>22,2%</td>
-            <td>Espanha<br>(46 754 778)
-            </td>
-        </tr>
+            <tr>
+                <td>Rio grande do sul</td>
+                <td class="num">10.693.929</td>
+            </tr>
 
-        <tr>
-            <td>2</td>
-            <td>Minas Gerais</td>
-            <td>19 597 330</td>
-            <td>20 732 660</td>
-            <td>+5.8%</td>
-            <td>10,0%</td>
-            <td>Burquina Fasso <br>(20 903 273)</td>
-        </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">8 796 448</td>
+            </tr>
 
-        <tr>
-            <td>3</td>
-            <td>Rio de Janeiro</td>
-            <td>15 989 929</td>
-            <td>16 615 526</td>
-            <td>+3.9%</td>
-            <td>8,0%</td>
-            <td>Camboja <br>(16 718 965)</td>
-        </tr>
+            <tr>
+                <td>ceará</td>
+                <td class="num">8 452 381</td>
+            </tr>
 
-        
+            <tr>
+                <td>Pará</td>
+                <td class="num">7 581 051</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">6 248 436</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="num">6 003 788</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="num">6 574 789</td>
+            </tr>
+            <tr>
+                <td>Espírito Santo</td>
+                <td class="num">3 514 952</td>
+            </tr>
 
-        
+            <tr>
+                <td>Paraíba</td>
+                <td class="num">3 766 528</td>
+            </tr>
 
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">3 483 985</td>
+            </tr>
+            <tr>
+                <td>Mato grosso</td>
+                <td class="num">3 035 122</td>
+            </tr>
 
+            <tr>
+                <td>Rio grande do norte</td>
+                <td class="num">3 168 027</td>
+            </tr>
+            
+            <tr>
+                <td>Piauí</td>
+                <td class="num">3 118 360</td>
+            </tr>
 
+            <tr>
+                <td>Alagoas</td>
+                <td class="num">3 120 494</td>
+            </tr>
+
+            <tr>
+                <td>Distrito Federal</td>
+                <td class="num">2,923,369</td>
+            </tr>
+
+            <tr> 
+                <td>Mato grosso do sul</td>
+                <td class="num">2 449 024</td>
+            </tr>
+
+            <tr>
+                <td>Sergipe</td>
+                <td class="num">2 068 017</td>
+            </tr>
+
+            <tr>
+                <td>Rondônia</td>
+                <td class="num">1 562 409</td>
+            </tr>
+
+            <tr>
+                <td>Tocantins</td>
+                <td class="num">1 383 445</td>
+            </tr>
+
+            <tr>
+                <td>Acre</td>
+                <td class="num">733 559</td>
+            </tr>
+
+            <tr>
+                <td>Amapá</td>
+                <td class="num">669 526</td>
+            </tr>
+
+            <tr>
+                <td>Roraima</td>
+                <td class="num">450 479</td>
+            </tr>
+        </tbody>
     </table>
 </body>
 </html>

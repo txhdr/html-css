@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+
+        * {
+            margin: 0px;
+        }
+
+        :root {
+            --cor1-contraste:#BD2A2E;
+            --cor2-fundo:#3B3936;
+            --cor3-t1:#486966;
+            --cor4-t2:#889C9B;
+            --cor5-t3:#B2BEBF;
+        }
+
+        html, body{
+            background-size: 100vw; 
+            background-color: var(--cor2-fundo);
+        }
+
+        h1{
+        text-align: center;
+        background-color: var(--cor1-contraste);
+        color: rgb(231, 237, 242);
+        padding: 5vw;
+        text-shadow: 1px 0.5px 1px rgba(0, 0, 0, 0.519);
+
+}
+
+        table {
+            background-color:var(--cor5-t3) ;
+            border-collapse: collapse;
+            margin: 30px;
+            width: 500px;
+            height: 300px;
+            position: relative;
+        }
+         thead > tr > th{
+            position: sticky;
+            top: -1px;
+        }
+
+        tbody > tr:nth-child(odd){
+            background-color: white;
+        }
+
+        caption {
+            background-color: var(--cor3-t1);
+            color: white;
+            border-radius: 20px 20px 0px 0px;
+            padding: 10px;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+
+        th{
+            border: 1px solid black;
+            padding: 7px;
+            background-color:var(--cor4-t2);
+            color: rgb(255, 255, 255);
+            text-shadow: 1px 0.5px 1px rgba(0, 0, 0, 0.447);
+            position:fixed;
+        }
+
+        
+        
+        th > P {
+            font-size: 11px;
+            font-weight: lighter;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+            vertical-align: top;
+        }
+
+        .num {
+            text-align: right;
+            width: 200px;
+        }
+
+
+
+        a {
+            text-decoration: none;
+        }
+        a:hover{
+        }
+
+        abbr{
+            text-decoration: none;
+        }
+
+
+
+
