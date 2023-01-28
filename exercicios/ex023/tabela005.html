@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        table{
+            width: 500px;
+            border-collapse: collapse;
+        }
+        caption{
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 7px;
+        }
+
+        th, td {border: 1px solid black;
+        padding: 10px;
+    }
+
+    tr:hover{
+        background-color: greenyellow;
+    }
+
+    .c1{background-color: aqua;}
+    .c2{
+        background-color:red ;
+    }
+
+    </style>
+    <title>Exercícios de tabela</title>
+</head>
+<body>
+    <table>
+        <caption>Cadastro do minha casa minha vida</caption>
+
+        <colgroup>
+        <col class="c1" span="3">
+        <col class="c2">
+    </colgroup>
+
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Jõao</td>
+            <td>M</td>
+            <td>27</td>
+            <td>programador</td>
+        </tr>
+        <tr>
+            <td>Ana</td>
+            <td>F</td>
+            <td>20</td>
+            <td>advogada</td>
+        </tr>
+        <tr>
+            <td>Carlos</td>
+            <td>M</td>
+            <td>43</td>
+            <td>Fazendeiro</td>
+        </tr>
+        <tr>
+            <td>Juliana</td>
+            <td>F</td>
+            <td>26</td>
+            <td>Streamer</td>
+        </tr>
+        <tr>
+            <td>Henrique</td>
+            <td>m</td>
+            <td>25</td>
+            <td>design</td>
+        </tr>
+        <tr>
+            <td>Vagner</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+
+        <tr></tr>
+
+    </table>
+    
+</body>
+</html>
