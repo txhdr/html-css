@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+/* todas as demais mídias */
+
+/*
+Typical Device Breakpoints:
+
+pequenas telas: Até 600px
+celular: até 600px até 768px
+Tablets: 768px até  992px
+desktop: 992px até 1200px
+grandes telas: acima de 1200px
+
+No tempo da aula:  2020 por ai
+
+i look at the W3C and the information is still current.
+*/
+
+
+/*IMPRESSORA */
+@media print{
+
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    body{
+        background-image: url(../imagens/back-print.jpg); /* desnecessario, na impressão n se usa background*/
+    }
+
+    main{
+        border: 2px solid black;
+        width: 90vw;
+    }
+
+    main h1{
+        text-shadow: none;
+        color: black;
+    }
+
+    img#phone{display: none;}
+    img#tablet{display: none;}
+    img#print{display: block;}
+    img#pc{display: none;}
+    img#tv{display: none;}
+
+    main::after{ 
+        content: 'essa impressão foi feita através do site www.cursoemvideo.com';
+        text-decoration: overline;
+
+
+    }
+}
+
+
+@media screen and (min-width:768px) and (max-width:992px) { /* TABLET */   
+
+    body{
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+
+    img#phone{display: none;}
+    img#tablet{display: block;}
+    img#print{display: none;}
+    img#pc{display: none;}
+    img#tv{display: none;}
+}
+
+
+/* DESKTOP*/
+@media screen and (min-width:993px) and (max-width:1200px){
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+    img#phone{display: none;}
+    img#tablet{display: none;}
+    img#print{display: none;}
+    img#pc{display: block;}
+    img#tv{display: none;}
+
+}
+
+/*GRANDES TELAS */
+@media screen and (min-width:1200px){
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    main{
+        width: 700px;
+    }
+
+    img#phone{display: none;}
+    img#tablet{display: none;}
+    img#print{display: none;}
+    img#pc{display: none;}
+    img#tv{display: block;}
+
+}
