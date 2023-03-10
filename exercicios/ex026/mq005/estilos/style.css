@@ -20,9 +20,25 @@ header h1{
     text-align: center;
 }
 
-menu{
-    font-display: block;
+i#burguer{
+    background-color: #2a2929;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px;
 }
+
+i#burguer:hover{
+    background-color: #f3f2f2;
+    color: #212121;
+    cursor: pointer;
+    
+}
+
+menu{
+    display: none;
+}
+
 
 menu > ul{
     list-style-type:none;
